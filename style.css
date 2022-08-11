@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family:  'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+/*navbar design start here*/
+h1{
+    text-align:center;
+    font-size: 2.5rem;
+}
+a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/*for mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    background-color: #0c616c;
+    padding:1% 7%;
+    text-align: center;    
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar h1{
+    color: white;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.nav-menu{
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    background-color: #0badc3;
+    margin: 7px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-menu a:hover{
+    background-color: gray;
+}
+/*navbar design end here*/
+/* profile design starts here */
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.weathericon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: 1s;
+}
+.weathericon:hover{
+    transform:rotate(360deg);
+
+}
+.description-desk h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+.description-desk p{ 
+   text-align:center;
+   margin: 0 auto 20px auto;
+   width: 80%;
+   color: gray;
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile design ends here */
